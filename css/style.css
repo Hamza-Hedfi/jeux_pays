@@ -1,0 +1,32 @@
+body {
+    background-color: #f5f5f5;
+}
+
+#image {
+    text-align: center;
+}
+
+#options {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#buttons {
+    text-align: center;
+}
+
+#btn1 {
+    margin-right: 10px;
+}
+
+#btn2 {
+    margin-left: 10px;
+}
+
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
