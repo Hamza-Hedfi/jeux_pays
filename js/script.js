@@ -121,6 +121,9 @@
             }
         }
 
+        alert("Votre score est : " + score())
+        
+
     });
 
     let selectTagsCollection = document.getElementsByTagName("select");
@@ -142,5 +145,21 @@
                 iterator.removeChild(iterator.querySelector(`option[value=${selectedOption.value}`));
         }
     }
+
+    // Load modal on page load 
     document.getElementById("open_modal").click();
+
+
+    function score() {
+        const answers = document.getElementsByTagName("select");
+        let score = 0;
+        for (const answer of answers) {
+            if (answer.value === answer.getAttribute("data-correct-answer")) {
+                score++;
+            }
+        }
+        return score;
+    }
+
+
 })();
