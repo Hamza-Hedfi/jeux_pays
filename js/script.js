@@ -121,7 +121,7 @@
             }
         }
 
-        alert("Votre score est : " + score())
+        alert("Votre score est : " + score() + " / 7")
         
 
     });
