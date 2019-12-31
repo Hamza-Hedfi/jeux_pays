@@ -142,4 +142,5 @@
                 iterator.removeChild(iterator.querySelector(`option[value=${selectedOption.value}`));
         }
     }
+    document.getElementById("open_modal").click();
 })();

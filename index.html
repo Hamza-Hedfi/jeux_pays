@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <title>Jeux de pays</title>
 </head>
 
 <body>
+
     <div class="container">
         <hr>
         <div class="row">
@@ -32,7 +33,12 @@
         <hr>
         <div class="row">
             <div class="col" id="buttons">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="open_modal">
+                    Info
+                </button>
+                <hr id="line">
                 <button type="button" class="btn btn-success" id="btn1">Valider</button>
+                <hr id="line">
                 <button type="button" class="btn btn-danger" id="btn2">Rétablir</button>
             </div>
         </div>
@@ -43,21 +49,48 @@
         </footer>
     </div>
 
-    <!-- Modal content -->
-    <div class="modal-content">
-        <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Modal Header</h2>
-        </div>
-        <div class="modal-body">
-            <p>Some text in the Modal Body</p>
-            <p>Some other text...</p>
-        </div>
-        <div class="modal-footer">
-            <h3>Modal Footer</h3>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Comment jouer?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Les règles sont simple.
+                        <br>
+                        <ul>
+                            <li>Identifier les nom des pays sur la carte.</li>
+                            <li>Vous avez une seule tentative par choix</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <p><small>Ce jeux fait est un mini-projet, pour la matière programmation web, au cycle [<strong>Ing. Info. 1<sup>ére</sup> année</strong>] à polyTech Monastir.</small></p>
+                    
+                </div>
+            </div>
         </div>
     </div>
 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
