@@ -112,18 +112,27 @@
     // Validate answers
     document.getElementById("btn1").addEventListener("click", (e) => {
         let userAnswers = document.getElementsByTagName("select");
+        let didAnswer = false;
         for (const answer of userAnswers) {
-            if (answer.getAttribute("data-correct-answer") === answer.value) {
-                answer.parentElement.setAttribute("class", "correct");
-            }
-            else {
-                answer.parentElement.setAttribute("class", "wrong");
+            if (answer.value) {
+                didAnswer = true;
             }
         }
 
-        alert("Votre score est : " + score() + " / 7")
-        
+        if (didAnswer) {
+            for (const answer of userAnswers) {
+                if (answer.getAttribute("data-correct-answer") === answer.value) {
+                    answer.parentElement.setAttribute("class", "correct");
+                }
+                else {
+                    answer.parentElement.setAttribute("class", "wrong");
+                }
+            }
 
+            alert("Votre score est : " + score() + " / 7")
+        } else {
+            alert("Essayer quand même");
+        }
     });
 
     let selectTagsCollection = document.getElementsByTagName("select");
