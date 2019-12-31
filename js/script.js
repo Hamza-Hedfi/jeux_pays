@@ -141,6 +141,5 @@
             if (iterator.hasChildNodes(selectedOption))
                 iterator.removeChild(iterator.querySelector(`option[value=${selectedOption.value}`));
         }
-
     }
 })();
