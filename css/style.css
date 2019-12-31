@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
+
 body {
-    background-color: #f5f5f5;
+    background-color: #f5f5f5 !important;
+    font-family: 'Gelasio', serif !important; 
 }
 
 #image {
@@ -16,19 +19,30 @@ body {
 }
 
 .correct {
-    background-color: green;
+    background-color: rgba(0, 255, 0, 0.7);
 }
 
 .wrong {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.7);
 }
 
 #line {
     margin: 10px;
     width: 2px;
     height: 22px;
-    background: rgb(19, 195, 98);
+    background: rgba(99, 99, 99, 1);
     border: none;
     display: inline-block;
     vertical-align: middle;
 }
+
+select {
+    width: 85%;
+    text-align-last: center;
+    float: right;
+}
+span {
+    text-align: center;
+    font-weight: bold;
+}
+
