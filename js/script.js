@@ -131,7 +131,7 @@
 
             alert("Votre score est : " + score() + " / 7")
         } else {
-            alert("Essayer quand même. \n Ce n'est pas qui a choisit la carte!!!");
+            alert("Essayer quand même. \nCe n'est pas moi qui a choisit la carte!!!");
         }
     });
 
